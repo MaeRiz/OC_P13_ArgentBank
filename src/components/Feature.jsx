@@ -1,8 +1,8 @@
 const Feature = ({ content }) => {
   return (
-    <div class="feature-item">
-      <img src={content.img} alt="Icon" class="feature-icon" />
-      <h3 class="feature-item-title">{content.title}</h3>
+    <div className="feature-item">
+      <img src={content.img} alt="Icon" className="feature-icon" />
+      <h3 className="feature-item-title">{content.title}</h3>
       <p>{content.desc}</p>
     </div>
   );
