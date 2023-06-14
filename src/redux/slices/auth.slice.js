@@ -40,7 +40,21 @@ export const authSlice = createSlice({
     name: "auth",
     initialState,
     reducers: {
-        logout: () => initialState
+        logout: () => initialState,
+        changeName: (state, action) => {
+            state.user.firstname = action.payload.firstname
+            state.user.lastname = action.payload.lastname
+
+            axios
+            .put(`${BACKEND_API}/profile`, {
+                firstName: action.payload.firstname,
+                lastName: action.payload.lastname
+            },{
+                "headers": {
+                    'Authorization': `Bearer ${state.userToken}`
+                }
+            })
+        }
     },
     extraReducers: (builder) => {
         builder.addCase(loginUser.pending, (state) => {
@@ -64,5 +78,5 @@ export const authSlice = createSlice({
 })
 
 
-export const { logout } = authSlice.actions
+export const { logout, changeName } = authSlice.actions
 export default authSlice.reducer
