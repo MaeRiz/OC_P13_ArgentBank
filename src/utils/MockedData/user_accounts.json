@@ -1,0 +1,185 @@
+{
+    "accounts": [
+        {
+            "id": 0,
+            "name": "Checking",
+            "balance": "10,928.42",
+            "transactions": [
+                {
+                    "id": 0,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 1,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 2,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 3,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 4,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Savings",
+            "balance": "1,568.72",
+            "transactions": [
+                {
+                    "id": 0,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 1,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 2,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 3,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 4,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 5,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 6,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Credit card",
+            "balance": "18,918.92",
+            "transactions": [
+                {
+                    "id": 0,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 1,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 2,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                },
+                {
+                    "id": 3,
+                    "date": "June 20th 2023",
+                    "description": "Golden sun Bakery",
+                    "amount": "5",
+                    "balance": "1000",
+                    "type": "Electronic",
+                    "categorie": "Food",
+                    "note": ""
+                }
+            ]
+        }
+    ]
+}
