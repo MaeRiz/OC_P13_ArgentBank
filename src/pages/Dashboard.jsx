@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getUserAccounts } from "../redux/slices/account.slice";
 import Account from "../components/Account";
-import { Navigate } from "react-router-dom";
 import { changeName } from "../redux/slices/auth.slice";
 
 const Dashboard = () => {
@@ -15,6 +14,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     dispatch(getUserAccounts());
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -41,10 +41,6 @@ const Dashboard = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }));
-  }
-
-  if (!useSelector((state) => state.auth.userToken)) {
-    return <Navigate to={"/sign-in"} />;
   }
 
   return (

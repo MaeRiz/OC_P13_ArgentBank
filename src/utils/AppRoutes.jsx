@@ -4,14 +4,21 @@ import Home from "../pages/Home";
 import SignIn from "../pages/SignIn";
 import Dashboard from "../pages/Dashboard";
 import Account from "../pages/Account";
+import ProtectedRoute from "./ProtectedRoute";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/sign-in" element={<SignIn />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/account/:idAcc" element={<Account />} />
+      <Route path="/sign-in" element={<SignIn />} />=
+      <Route
+        path="/dashboard"
+        element={<ProtectedRoute page={<Dashboard />} />}
+      />
+      <Route
+        path="/account/:idAcc"
+        element={<ProtectedRoute page={<Account />} />}
+      />
     </Routes>
   );
 };
