@@ -12,8 +12,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": "Test"
                 },
                 {
                     "id": 1,
@@ -22,8 +22,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 2,
@@ -32,8 +32,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 3,
@@ -42,8 +42,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 4,
@@ -52,8 +52,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 }
             ]
         },
@@ -69,8 +69,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 1,
@@ -79,8 +79,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 2,
@@ -89,8 +89,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 3,
@@ -99,8 +99,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 4,
@@ -109,8 +109,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 5,
@@ -119,8 +119,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 6,
@@ -129,8 +129,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 }
             ]
         },
@@ -146,8 +146,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 1,
@@ -156,8 +156,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 2,
@@ -166,8 +166,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 },
                 {
                     "id": 3,
@@ -176,8 +176,8 @@
                     "amount": "5",
                     "balance": "1000",
                     "type": "Electronic",
-                    "categorie": "Food",
-                    "note": ""
+                    "category": "Food",
+                    "notes": ""
                 }
             ]
         }
