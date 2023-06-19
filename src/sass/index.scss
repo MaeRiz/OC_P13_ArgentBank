@@ -182,12 +182,18 @@ html {
     input {
       border: 2px solid red;
       border-radius: 3px;
+      &:focus {
+        border: 2px solid red;
+        outline: none;
+      }
     }
+
 
     .red-error {
       color: red;
     }
   }
+
 
   .input-remember {
     display: flex;
@@ -399,5 +405,20 @@ html {
         margin: 10px 0 10px 9%;
         text-align: start;
       }
+    }
+  }
+
+  .transaction-page-header {
+    background-color: white;
+    margin: 0 30%;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 0 20px 0;
+    margin-bottom: 50px;
+    h1, h2, p {
+      margin: 5px;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 20px;
     }
   }

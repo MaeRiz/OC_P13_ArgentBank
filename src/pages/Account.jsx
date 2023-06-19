@@ -12,8 +12,10 @@ const Account = () => {
 
   return (
     <main className="main bg-dark">
-      <div className="header">
-        <h2>Argent Bank {account.name}</h2>
+      <div className="transaction-page-header">
+        <h2>
+          Argent Bank {account.name} (x{account.transactions.length})
+        </h2>
         <h1>$ {account.balance}</h1>
         <p>Available Balance</p>
       </div>
