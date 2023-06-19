@@ -36,7 +36,7 @@ const SignIn = () => {
   };
 
   if (userToken) {
-    return <Navigate replace to="/dashboard" />;
+    return <Navigate replace to="/profile" />;
   }
 
   return (

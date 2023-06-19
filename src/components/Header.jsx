@@ -20,13 +20,13 @@ const Header = () => {
       </Link>
       {!userToken ? (
         <div>
-          <Link to="/sign-in" className="main-nav-item">
+          <Link to="/login" className="main-nav-item">
             <i className="fa fa-user-circle"></i> Sign In
           </Link>
         </div>
       ) : (
         <div>
-          <Link className="main-nav-item" to={"/dashboard"}>
+          <Link className="main-nav-item" to={"/profile"}>
             <i className="fa fa-user-circle"></i> {user.firstname}
           </Link>
           <Link
