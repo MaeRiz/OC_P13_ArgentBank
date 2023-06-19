@@ -5,6 +5,7 @@ import SignIn from "../pages/SignIn";
 import Dashboard from "../pages/Dashboard";
 import Account from "../pages/Account";
 import ProtectedRoute from "./ProtectedRoute";
+import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
         path="/account/:idAcc"
         element={<ProtectedRoute page={<Account />} />}
       />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
