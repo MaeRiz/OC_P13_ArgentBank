@@ -320,31 +320,17 @@ html {
     }
   }
   
-  @media (min-width: 720px) {
-    .account {
-      flex-direction: row;
-    }
-  
-    .account-content-wrapper.cta {
-      flex: 0;
-    }
-  
-    .transaction-button {
-      width: 200px;
-    }
-  }
-  
-
-
   .transactions-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     p {
-      width: 300px;
+      width: 22%;
       text-align: center;
       white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
     .legend {
       display: flex;
@@ -352,6 +338,7 @@ html {
       justify-content: space-around;
       color: white;
       font-weight: 600;
+      padding-left: 5%;
     }
   }
   .transaction {
@@ -360,6 +347,9 @@ html {
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-left: 5%;
 
     i:hover {
       cursor: pointer;
@@ -379,13 +369,11 @@ html {
       position: relative;
       width: 100%;
       justify-content: space-around;
-      background-color: white;
-      border-radius: 5px;
       font-weight: 600;
 
       i.fa-angle-down {
         position: absolute;
-        left: 20px;
+        left: -25px;
         top: 10px;
         font-size: 28px;
         font-weight: 900;
@@ -397,13 +385,12 @@ html {
       display: flex;
       flex-direction: column;
       align-items: normal;
-      background-color: white;
       width: 100%;
-      border-radius: 0 0 5px 5px ;
       font-weight: 600;
       p {
         margin: 10px 0 10px 9%;
         text-align: start;
+        width: 100%;
       }
     }
   }
@@ -436,5 +423,30 @@ html {
     }
     h2 {
       margin: 0 0 30px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .transaction {
+      width: 90%;
+      padding-left: 8%;
+    }
+
+    .transaction-page-header {
+      margin: 0 15% 30px 15%;
+    }
+  }
+
+  @media (min-width: 720px) {
+    .account {
+      flex-direction: row;
+    }
+  
+    .account-content-wrapper.cta {
+      flex: 0;
+    }
+  
+    .transaction-button {
+      width: 200px;
     }
   }
