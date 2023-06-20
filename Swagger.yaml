@@ -1,9 +1,9 @@
 openapi: 3.0.3
 info:
   title: Bank Argent API documentation
-  description: |- 
+  description: |-
     This documentation contains all the endpoints of the Argent Bank API for the transaction part. 
-    
+
     Some useful links:
     - [Backend API](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master)
     - [Frontend React App](https://github.com/MaeRiz/OC_P13_ArgentBank)
@@ -22,7 +22,7 @@ paths:
     get:
       tags:
         - Account
-      summary: Finds all user's accounts
+      summary: User's accounts
       description: Endpoint for fetching all user's accounts
       operationId: getUserAccounts
       parameters:
@@ -33,15 +33,15 @@ paths:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Successful
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Account'
-        '500':
+                  $ref: "#/components/schemas/Account"
+        "500":
           description: Internal server error
       security:
         - Bearer: []
@@ -49,7 +49,7 @@ paths:
     get:
       tags:
         - Account
-      summary: Finds specific user's account
+      summary: Specific user's account
       description: Endpoint for fetching specific user's account
       operationId: getUserAccount
       parameters:
@@ -67,16 +67,16 @@ paths:
             type: integer
             format: int64
       responses:
-        '200':
+        "200":
           description: Successful
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Account'
+                $ref: "#/components/schemas/Account"
 
-        '404':
+        "404":
           description: Not found
-        '500':
+        "500":
           description: Internal server error
       security:
         - Bearer: []
@@ -84,7 +84,7 @@ paths:
     get:
       tags:
         - Transaction
-      summary: Finds all user's transactions from account
+      summary: User's transactions
       description: Endpoint for fetching all user's transactions from account
       operationId: getUserTransactions
       parameters:
@@ -102,25 +102,25 @@ paths:
             type: integer
             format: int64
       responses:
-        '200':
+        "200":
           description: Successful
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Transaction'
-                
-        '500':
+                  $ref: "#/components/schemas/Transaction"
+
+        "500":
           description: Internal server error
       security:
         - Bearer: []
-        
+
   /account/{AccId}/transaction/{TransId}:
     get:
       tags:
         - Transaction
-      summary: Finds specific transaction from account
+      summary: Specific user's transaction
       description: Endpoint for fetching specific transaction from account
       operationId: getUserTransaction
       parameters:
@@ -145,22 +145,22 @@ paths:
             type: integer
             format: int64
       responses:
-        '200':
+        "200":
           description: Successful
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Transaction'
-        '404':
+                $ref: "#/components/schemas/Transaction"
+        "404":
           description: Not found
-        '500':
+        "500":
           description: Internal server error
       security:
         - Bearer: []
     put:
       tags:
         - Transaction
-      summary: Update specific transaction from user's account
+      summary: Update transaction
       description: Update specific transaction from user's account
       operationId: UpdateTransaction
       parameters:
@@ -199,13 +199,13 @@ paths:
                   example: My best experience ever
         required: true
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Transaction'
-        '405':
+                $ref: "#/components/schemas/Transaction"
+        "405":
           description: Invalid input
       security:
         - Bearer: []
@@ -223,7 +223,7 @@ components:
           type: string
           example: Savings
         balance:
-          type: string
+          type: number
           example: 1000.00
     Transaction:
       type: object
@@ -232,17 +232,18 @@ components:
           type: integer
           format: int64
           example: 10
-        date:
-          type: string
-          example: Savings
+        accountId:
+          type: integer
+          format: int64
+          example: 0
         description:
           type: string
           example: Golden sun Bakery
         amount:
-          type: integer
+          type: number
           example: 5
         balance:
-          type: string
+          type: number
           example: 1000.00
         type:
           type: string
@@ -252,11 +253,16 @@ components:
           example: Food
         note:
           type: string
-          example: Best out ever
-
+          example: Best food ever
+        createdTime:
+          type: string
+          example: 20230620.09H20
+        updatedTime:
+          type: string
+          example: 20230620.09H21
 
   securitySchemes:
     Bearer:
       type: apiKey
-      name: api_key
+      name: Authorization
       in: header
